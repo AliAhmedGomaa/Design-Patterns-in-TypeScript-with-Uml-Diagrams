@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Tea_1 = require("./Tea");
+var Sugar_1 = require("./Sugar");
+var Milk_1 = require("./Milk");
+var t = new Tea_1.Tea;
+var teaWithSugar = new Sugar_1.Sugar(t);
+console.log(teaWithSugar.cost());
+var teaWithSugarAndMilk = new Milk_1.Milk(teaWithSugar);
+console.log(teaWithSugarAndMilk.cost());
